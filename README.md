@@ -25,3 +25,4 @@ En esta práctica se instaló nest, se creó un proyecto llamado 01 fundamentos,
 El servidor NestJS funciona levantando una aplicación Node.js y este escucha peticiones HTTP. Por ejemplo, es esta práctica, cuando el usuario se dirige a /api/status. NestJS se encarga de dirigir la solicitud al controlador correspondiente.
 
 
+Una similitud que observo con Spring boot es que ambos usan una estructura organizada que se basa en controladores, módulos, servicios y componentes para definir rutas y comportamientos
