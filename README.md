@@ -1,5 +1,9 @@
 # 01_Configuracion
 
+## Ejecutarlo
+
+pnpm start:dev
+
 ## 01 Captura del comando de verificación de node.js
 
 ![verificacion de node](/assets/01-verificacion-nodejs.png)
@@ -26,3 +30,25 @@ El servidor NestJS funciona levantando una aplicación Node.js y este escucha pe
 
 
 Una similitud que observo con Spring boot es que ambos usan una estructura organizada que se basa en controladores, módulos, servicios y componentes para definir rutas y comportamientos
+
+# 02_estructura_proyecto
+
+## Captura del IDE mostrando la estructura modular
+
+![Estructura modular](/assets/01-estructura-modular-nest.png)
+
+## Captura del archivo users.module.ts
+
+![users.module.ts](/assets/02-user-module-ts.png)
+
+## Captura del arbol desde terminal
+
+![Arbol desde terminal](/assets/03-arbol-desde-terminal-nest.png)
+
+## Explicación breve
+
+La arquitectura modular permite la separación de la aplicación acorde a su responsabilidad. Observamos que users agrupa todo los elementos que estén relacionados con usuarios, auth se encarga de todo lo relacionado a la autenticación y lo mismo para productos.
+
+El controller, al igual que spring boot, se encarga de recibir peticiones HTTP y definir rutas que estén disponibles. En service se guarda la lógica de negocio que será usada por el controller y por último el módulo es el elemento que se encarga de organizar los controladores (controllers) y los servicios (services)
+
+Mantener una estructura clara y ordenada ayuda a la mantenibilidad, ya que cada funcionalidad se guarda en una carpeta específica. Esto nos facilita para encontrar los archivos más rápidos y no evita confusiones. Ya que sería un desastre tener todos los archivos mezclados en una misma carpeta. 
